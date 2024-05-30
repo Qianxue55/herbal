@@ -1,0 +1,48 @@
+.product-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.modal-content {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns content vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+}
+
+.modal-image {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+}
+
+.modal-image img {
+    max-width: 150px; /* Limits image width */
+    border-radius: 10px; /* Rounds image corners */
+}
+
+.modal-details {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns text and other elements vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text is centered */
+}
+
+
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}

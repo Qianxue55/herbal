@@ -1,0 +1,107 @@
+/* Shopping Cart Styles */
+.shopping-cart {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px; /* Adjust width as needed */
+    position: fixed; /* Fixed position for sticky header */
+    bottom: 20px; /* Adjust bottom position as needed */
+    right: 20px; /* Adjust right position as needed */
+    z-index: 999; /* Ensure it appears above other content */
+  }
+  
+  .shopping-cart h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+
+  .shopping-cart {
+    display: none; /* Initially hide the shopping cart */
+    /* Other styles for the shopping cart */
+  }
+  
+  .shopping-cart.open {
+    display: block; /* Display the shopping cart when it has the 'open' class */
+  }
+  
+.quantity {
+    width: 40px; /* Adjust width as needed */
+    margin-right: 10px; /* Add margin to the right to create a gap */
+  }
+  
+  /* Add style for the trash icon */
+  .fa-trash-can {
+    font-size: 18px; /* Adjust size as needed */
+  }
+  
+  .remove {
+    text-align: right;
+    font-weight: 900;
+  }
+  
+  .cart-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #a9b2e4 0%, #737ba5 100%);
+    padding: 15px;
+    margin: 40px 15px;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+  }
+  
+  .cart-box img {
+    width: 50px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+  }
+  
+  .txt {
+    flex-grow: 1;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .check-out {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .check-out span {
+    font-weight: bold;
+  }
+  
+  .btn button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Optional: Add styles for the close icon */
+  .close-icon {
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 20px;
+    background-color: var(--danger);
+    color: white;
+    padding: 4px 7px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  
+  /* Optional: Style for the container when the cart is closed */
+  .shopping-cart.closed {
+    display: none;
+  }
+  

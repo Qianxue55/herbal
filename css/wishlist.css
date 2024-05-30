@@ -1,0 +1,333 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-top: 40px; /* Add top margin to create space */
+    text-align: center;
+    color: #333;
+    line-height: 1.2; /* Slightly adjust line height for better appearance */
+}
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product-card {
+    background: white; /* Use a white background for a cleaner look */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Slightly more rounded corners */
+    width: 220px; /* Increase card width for more space */
+    margin: 15px; /* Increase margin for separation */
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Increase shadow for better depth */
+    overflow: hidden; /* Ensure content doesn't overflow the card */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-card p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #444; /* Darken text color for better readability */
+}
+
+.product-card span {
+    color: #666; /* Adjust text color for a subtler appearance */
+}
+
+.add-to-wishlist {
+    background: #f44;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.add-to-wishlist:hover {
+    background: #c33; /* Darken color on hover */
+}
+
+/* Wishlist Styles */
+#wishlist-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Match the product card border radius */
+    background: white; /* Ensure consistency in background */
+    margin: 15px;
+    padding: 15px; /* Increase padding for a more spacious feel */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Match the product card shadow */
+}
+
+.wishlist-image {
+    flex: 1;
+}
+
+.wishlist-image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.wishlist-details {
+    flex: 2;
+    padding: 0 10px;
+}
+
+.wishlist-actions {
+    flex: 1;
+    text-align: right;
+}
+
+.wishlist-actions .remove-wishlist {
+    background: #e33;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.wishlist-actions .remove-wishlist:hover {
+    background: #c11;
+}
+
+
+
+
+/* ----------- article page ------- */
+
+/* Main Site Styles */
+#site-main {
+    padding: 20px 0;
+}
+
+/* Post Content */
+#post {
+    margin-bottom: 30px;
+}
+
+/* Headings */
+.headings {
+    margin-bottom: 20px;
+}
+
+.headings .category .nav-link {
+    color: #006400;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.headings .title h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.headings .meta .link {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.headings .meta .link i {
+    margin-right: 5px;
+    color: #006400;
+}
+
+/* Thumbnail */
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Content */
+.content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+/* Post Footer */
+.post-footer {
+    margin-top: 40px;
+  }
+  
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-tags .nav-link {
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    color: #006400;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  .post-tags .nav-link:hover {
+    background-color: #006400;
+  }
+
+/* Post Tags */
+.post-tags .nav-link {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #006400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.post-tags .nav-link:hover {
+    background-color: #006400;
+    color: #265803;
+}
+
+/* Social Media Icons */
+.post-author .post-tags .nav-link {
+    margin: 0 5px;
+    color: #006400;
+    font-size: 1.2rem;
+    transition: color 0.3s; /* adding transition effect for color change */
+}
+
+.post-author .post-tags .nav-link:hover {
+    color: #a8ebc7; /* changing text color on hover */
+}
+
+
+/* Post Author */
+.post-author {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.post-author .author-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.post-author .author-info h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.post-author .author-info p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+/* Related Posts */
+.post-realted .row {
+    margin-top: 30px;
+}
+
+.post-realted .prev {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: left; /* aligning "Previous Post" to the left */
+}
+ 
+.post-realted .next {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: right; /* aligning "Previous Post" to the left */
+}
+
+.post-realted .prev a, 
+.post-realted .next a {
+    font-size: 1rem;
+    color: #006400;
+}
+
+.post-realted .prev a:hover, 
+.post-realted .next a:hover {
+    color: #004b23;
+}
+
+.post-realted .article .d-flex {
+    align-items: center;
+}
+
+.post-realted .article img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.post-realted .article .cart-body {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.post-realted .article .category .link {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.post-realted .article .text-title {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.post-realted .article .text-title:hover {
+    color: #006400;
+}
+
+
+/* ----------- .article page ------- */

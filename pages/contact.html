@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome Kit Code-->
+    <script src="https://kit.fontawesome.com/43c421b643.js" crossorigin="anonymous"></script>
+
+    <!--Linked CSS stylesheet-->
+    <link rel="stylesheet" href="../css/home_style.css">
+    <link rel="stylesheet" href="../css/view.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/herbal.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/wishlist.css">
+    <!--Linked Glider.js cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+    <title>Green Arena</title>
+</head>
+
+<body>
+
+
+            <!-- *************Login & Signup ************** -->
+            <div id="main">
+                <div id="login">
+                    <h4 id="close">X</h4>
+                    <h2>Login/Sign Up</h2>
+                    <div id="main1">
+                        <div>
+                            <img id="mob" src="https://in.sugarcosmetics.com/smartphone.svg" alt="a">
+                            <p>Login/Sign Up Using Phone</p>
+                        </div>
+                        <div id="mobno">
+                            <p>+63</p>
+                            <input id="i1" type="tel" maxlength="1" onkeyup="z(event,'i2','','i1')">
+                            <input id="i2" type="tel" maxlength="1" onkeyup="z(event,'i3','i1','i2')">
+                            <input id="i3" type="tel" maxlength="1" onkeyup="z(event,'i4','i2','i3')">
+                            <input id="i4" type="tel" maxlength="1" onkeyup="z(event,'i5','i3','i4')">
+                            <input id="i5" type="tel" maxlength="1" onkeyup="z(event,'i6','i4','i5')">
+                            <input id="i6" type="tel" maxlength="1" onkeyup="z(event,'i7','i5','i6')">
+                            <input id="i7" type="tel" maxlength="1" onkeyup="z(event,'i8','i6','i7')">
+                            <input id="i8" type="tel" maxlength="1" onkeyup="z(event,'i9','i7','i8')">
+                            <input id="i9" type="tel" maxlength="1" onkeyup="z(event,'i10','i8','i9')">
+                            <input id="i10" type="tel" maxlength="1" onkeyup="z(event,'','i9','i10')">
+                            <button >Request OTP</button>
+                        </div>
+                        <p>Enter your phone number to request an OTP</p>
+                        <hr>
+                        <p>Enter the 4 digit OTP received on your phone</p>
+                        <div id="otp">
+                            <input id="j1" type="tel" maxlength="1" onkeyup="x(event,'j2','','j1')">
+                            <input id="j2" type="tel" maxlength="1" onkeyup="x(event,'j3','j1','j2')">
+                            <input id="j3" type="tel" maxlength="1" onkeyup="x(event,'j4','j2','j3')">
+                            <input id="j4" type="tel" maxlength="1" onkeyup="x(event,'','j3','j4')">
+                        </div>
+                        <button id="votp">Verify OTP</button><br>
+                        <label id="check">
+                            <input type="checkbox" checked>
+                            <span id="z">By Signing up or logging in, you agree to our Terms and Conditions</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <!-- *************register ************** -->
+            <div id="mainx">
+                <div id="login">
+                    <h4 id="close1">X</h4>
+                    <h2>Login/Sign Up</h2>
+                    <div id="main1">
+                        <div>
+                            <img id="mob" src="https://in.sugarcosmetics.com/smartphone.svg" alt="a">
+                            <p>Welcome!</p>
+                        </div>
+                        
+                        <p id="verify"></p>
+                        <div id="fbg">
+                            <img src="https://in.sugarcosmetics.com/desc-images/facebook_login.svg" alt="">
+                            <p>or</p>
+                            <img src="https://in.sugarcosmetics.com/desc-images/google.png" alt="">
+                        </div>
+                        <hr>
+                        <p>Or Enter Account Details</p>
+                        <div id="fln">
+                            <input id="fn" type="text" placeholder="First Name">
+                            <input id="ln" type="text" placeholder="Last Name">
+                        </div>
+                        <input id="ema" type="text" placeholder="Email Address"><br>
+                        <button id="sac">Save And Continue</button><br>
+                        
+                    </div>
+                </div>
+            </div>
+
+    
+        <!-- Shopping cart content -->
+        <div class="sticky-header">
+            <header class="header-area">
+              <!-- Shopping Cart Start -->
+              <div class="shopping-cart">
+                <h4>Your Cart</h4>
+                <div class="remove">
+                  <i class="fa-solid fa-xmark close-icon"></i>
+                </div>
+                <div id="cart-items-container" class="cart-items-container">
+                  <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="check-out">
+                    
+                  <span>Total:</span>
+                  <span id="cart-total-price" class="cart-total-price">$0</span>
+                  <div class="btn">
+                    <button>Checkout</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Shopping Cart End -->
+            </header>
+          </div>
+          <!-- End Header -->
+
+
+
+        
+        <!--header main-->
+        <div class="header-main">
+            <div class="container header-main-wrapper">
+                <img src="../images/logo.svgS" id="brand-logo" alt="Herbal Essence Logo">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../index.html" id="active">Home</a></li>
+                        <li><a href="../index.html#about-section">About</a></li>
+                        <li><a href="../index.html#feature-plants">Shop</a></li>
+                        <li><a href="../index.html#blog-section">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="secondary-nav">
+                    <div class="shopping" id="cartIcon">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span class="item">0</span>
+                        <span class="tooltip">Shopping Cart</span>
+                    </div>              
+                    <a href="../pages/wishlist.html"> <!-- Link to the desired page -->
+                        <div class="wishlist" id="wishlistIcon">
+                          <i class="fa-solid fa-heart"></i>
+                          <span class="tooltip">Wishlist</span>
+                        </div>
+                      </a>                      
+                    <div id="log"><div id="lg">Log Out</div></div>
+                </div>
+            </div>
+        </div>
+
+
+    <!--Contact-->
+    <section id="contact-section" class="contact-bg">
+        <div class="container contact-wrapper">
+        <div class="container contact-form-wrapper">
+            <div class="contact-left">
+                <!--contact-header-->
+                <div class="contact-header">
+                    <h1 class="c-title">Get in touch!</h1>
+                    <p class="c-description">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                        tempor invidunt ut labore et dolore magna.
+                    </p>
+                </div>
+
+                <!--contact-list-->
+                <div class="contact-list">
+                    <div class="c-call">
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p>+63 9201063627</p>
+                    </div>
+                    <div class="c-email">
+                        <span><i class="fa-solid fa-at"></i></span>
+                        <p>herbalEssence@gmail.com</p>
+                    </div>
+                    <div class="c-address">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <p>Pamantasan ng lungsod ng Valenzuela</p>
+                    </div>
+                </div>
+
+                <!--socials-->
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+            <form action="" for="email" id="contact-right">
+                <p class="pre-msg">Feel free to drop a message</p>
+                <input type="text" id="first-name" name="name" placeholder="Enter name" required><br>
+                <input type="email" id="contact-email" name="email" placeholder="Enter email" required><br>
+                <textarea name="text" id="comment-box" cols="30" rows="7" form="contact-right" placeholder="Your message..."></textarea><br>
+                <input type="submit" id="c-submit" value="Send Message"><br>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-lg-3 col-10 me-auto mb-4">
+                    <div class="footer-left">
+                        <img src="../images/logo_white.svg" id="footer-logo" alt="Herbal Essence Logo">
+                        <p>Lorem ipsum dolor sit amet, 
+                            consetetur sadipscing elitr, sed diam 
+                            nonumy 300+ eirmod tempor invidunt 
+                            ut labore</p>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-8">
+                    <h5 class="text-white mb-3">Sitemap</h5>
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li class="footer-menu-item"><a href="../index.html#about-section" class="footer-menu-link">About</a></li>
+                        <li class="footer-menu-item"><a href="../index.html#feature-plants" class="footer-menu-link">Shop</a></li>
+                        <li class="footer-menu-item"><a href="../index.html#blog-section" class="footer-menu-link">Blogs</a></li>
+                        <li class="footer-menu-item"><a href="../pages/contact.html" class="footer-menu-link">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-4">
+                    <h5 class="text-white mb-3">Social</h5>
+                    <ul class="social-icon">
+                        <li><a href="#" class="fab fa-facebook"></a></li>
+                        <li><a href="#" class="fab fa-instagram"></a></li>
+                        <li><a href="#" class="fab fa-twitter"></a></li>
+                        <li><a href="#" class="fab fa-linkedin"></a></li>
+                    </ul>
+                </div>
+    
+            </div>
+        </div>
+        <hr class="white"> <!-- White horizontal line -->
+        <div class="container text-center"> <!-- Centering the text -->
+            <p>Herbal Essence © 2024 | Created by Batac, Macaranas, Moraña</p>
+        </div>
+    </footer>
+    
+    
+    
+<!--Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/banner.js"></script>
+<script src="../js/filter.js"></script>
+<script src="../js/cart.js"></script>
+<script src="../js/wishlist.js"></script>
+
+<!-- JAVASCRIPT FILES -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/Headroom.js"></script>
+<script src="../js/jQuery.headroom.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/custom.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/register.js"></script>
+<script src="../js/navbar.js"></script>
+
+</body>
+</html>
